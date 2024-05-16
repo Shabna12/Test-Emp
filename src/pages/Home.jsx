@@ -15,7 +15,7 @@ function Home() {
     const navigate = useNavigate()
 
     useEffect(() =>{
-        axios.get('http://localhost:3000/users')
+        axios.get('https://te-server-1.onrender.com/users')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])

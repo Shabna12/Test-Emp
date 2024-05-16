@@ -17,7 +17,7 @@ function Create() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:3000/users', inputData)
+        axios.post('https://te-server-1.onrender.com/users', inputData)
         .then(res=>{
             alert("Data Saved Successfully !!")
             navigate('/')

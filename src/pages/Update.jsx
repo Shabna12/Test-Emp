@@ -7,7 +7,7 @@ function Update() {
     const {id} = useParams()
     
     useEffect(() =>{
-        axios.get('http://localhost:3000/users' +id)
+        axios.get('https://te-server-1.onrender.com/users' +id)
         .then(res => setInputData(res.data))
         .catch(err => console.log(err))
     }, [])
@@ -25,7 +25,7 @@ function Update() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.put('http://localhost:3000/users/'+id, inputData)
+        axios.put('https://te-server-1.onrender.com/users/'+id, inputData)
         .then(res=>{
             alert("Data Updated Successfully !!")
             navigate('/')
