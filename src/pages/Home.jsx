@@ -84,7 +84,7 @@ function Home() {
   function handleDelete(id) {
     if (confirm) {
         const confirm = window.confirm("Do you wish to DELETE ?")
-        axios.delete('http://localhost:3000/users/'+id)
+        axios.delete('https://te-server-1.onrender.com/users/'+id)
         .then(res =>{
             alert("Data Deleted !!")
             navigate('/')
